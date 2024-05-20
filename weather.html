@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/weather.css">
+    <script src="./src/javascript/weather.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            The Weather App
+        </header>
+        <div class="top" id="name_and_search">
+            <input type="text" id="city_name_input">
+            <button id="Search" onclick="main()"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+
+        <div class="bottom" id="div_bottom">
+            <div id="entered_city_name_div">
+                <p1 id="entered_city_name"></p1>
+
+            </div>
+            <div id="temp_clock">
+                <div id="temperature_and_text_area">
+                    <div id="temperature_text_area">
+                        <p id="temperature_text"></p>
+                    </div>
+                    <div id="temperature_value">
+                        
+                    </div>
+
+                </div>
+                <div id="clock_and_text">
+                    <div id="clock_text">
+                        <p id="time_in_city"></p>
+                    </div>
+                    <div id="clock_Value">
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="icon_area">
+                <div id="status_div">
+                    <p id="status">Status:</p>
+                    <div id="status_value_div">
+                        <p id="status_value"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
