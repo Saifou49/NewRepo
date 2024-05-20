@@ -89,7 +89,7 @@ function main()
                     currentTime = new Date(Date.now() + (timeZoneOffset) * 1000); // This is the formul how to determin the time
                                                                             // of a given city without knowing the timeOffSet;
                     //Now i will determine the exact hour, minutes and seconds
-                    var hour = currentTime.getHours() - 2;// I extract the hour
+                    var hour = currentTime.getHours() ;// I extract the hour
                     var minutes = currentTime.getMinutes();// I extract the minutes
                     var seconds = currentTime.getSeconds();// I extract the seconds
 
