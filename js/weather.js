@@ -66,7 +66,7 @@ function main()
     async function takeTheTimeAndDisplayIt() 
     {
         const myApiKey = '49b162e65c11ba46a61f1793c30c4b26';
-        const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${enteredCityNameCapitalize}&appid=${myApiKey}`;
+        const apiUrl = `http://[new-repo-qa1zz4ni4-saifou49s-projects.vercel.app]api.openweathermap.org/data/2.5/weather?q=${enteredCityNameCapitalize}&appid=${myApiKey}`;
 
         // https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
@@ -122,7 +122,7 @@ function main()
     async function displayTemperature()
     {
         const myApiKey = '49b162e65c11ba46a61f1793c30c4b26';
-        const temperatureURL = `http://api.openweathermap.org/data/2.5/weather?q=${enteredCityNameCapitalize}&appid=${myApiKey}&units=metric`;
+        const temperatureURL = `http://[new-repo-qa1zz4ni4-saifou49s-projects.vercel.app]api.openweathermap.org/data/2.5/weather?q=${enteredCityNameCapitalize}&appid=${myApiKey}&units=metric`;
         
         try
         {
@@ -166,7 +166,7 @@ function main()
         }
         catch(error)
         {
-            temperatureTag.innerHTML = 'Error '+ error;
+            temperatureTag.innerHTML = 'Error ';
         }
 
     }
