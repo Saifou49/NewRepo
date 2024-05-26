@@ -12,6 +12,8 @@ var intervalID = '';
 
 function main()
 {
+
+
     var enteredCityName = document.getElementById('city_name_input').value;// Take the value of the input field
     var displayedCityName = document.getElementById('entered_city_name').innerHTML;// Take the already displayed city name if exist
     var enteredCityNameCapitalize = enteredCityName.charAt(0).toUpperCase() + enteredCityName.slice(1);
@@ -85,11 +87,11 @@ function main()
                var timeZoneOffset = data.timezone;
 
                 function keepDisplayingTheTime () {
-                    var utcDate = new Date();
-                    currentTime = new Date(Date.now() + (timeZoneOffset) * 1000); // This is the formul how to determin the time
+                    // currentTime = new Date(Date.now() + (timeZoneOffset) * 1000); // This is the formul how to determin the time
                                                                             // of a given city without knowing the timeOffSet;
+                    currentTime = new Date(Date.now() + (timeZoneOffset) * 1000);
                     //Now i will determine the exact hour, minutes and seconds
-                    var hour = currentTime.getHours() ;// I extract the hour
+                    var hour = currentTime.getHours() -2;// I extract the hour
                     var minutes = currentTime.getMinutes();// I extract the minutes
                     var seconds = currentTime.getSeconds();// I extract the seconds
 
@@ -104,7 +106,7 @@ function main()
             }
             else
             {
-                clockPTag.innerHTML = 'Error fetching data';
+                clockPTag.innerHTML = 'Error';
             }
 
         }
@@ -161,7 +163,7 @@ function main()
             }
             else
             {
-                temperatureTag.innerHTML = 'Error';
+                document.getElementById('temperature_value').innerHTML = 'Error';
             }
         }
         catch(error)
